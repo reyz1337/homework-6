@@ -32,11 +32,11 @@ main{
 }
 .container{
     min-height: 592px;
-    min-width: 1170px;
+    max-width: 1170px;
 }
 .list{
     min-height: 592px;
-    min-width: 1170px;
+    max-width: 1170px;
     font-size: 0px;
     border: 4px solid #fff;
     background-color: #fff;
@@ -139,4 +139,26 @@ main{
 }
 .container .list li:hover{
     opacity: 100%;
+}
+
+/* @media only screen and (max-width: 795px){
+    .list li{
+        font-size: 22px;
+        height: 147px;
+        display: inline-block;
+    }
+} */
+
+@media only screen and (min-width: 1440px){
+        .container{
+            min-height: 592px;
+            max-width: 1920px;
+        }
+        .list{
+            min-height: 592px;
+            max-width: 1920px;
+            font-size: 0px;
+            border: 4px solid #fff;
+            background-color: #fff;
+        }
 }
